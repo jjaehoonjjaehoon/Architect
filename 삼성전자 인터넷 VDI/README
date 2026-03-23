@@ -1,0 +1,10 @@
+1. 프로젝트 명
+  삼성전자 DS S-RBS 인터넷 VDI PoC
+  
+2. 구축 목적
+  사내에서 생성형 AI 도구를 안전하게 활용할 수 있도록 인터넷 접속이 가능한 VDI 환경을 구축하였습니다.
+
+3. 사용 기술
+  Azure VNet, Palo Alto Firewall, UDR, Log Analytics를 활용하여 인터넷 VDI 환경을 구축했습니다.
+  특히, 트래픽이 외부 인터넷으로 나가는 만큼 유해 사이트 접근 통제가 중요하다고 판단하였습니다.
+  이에 따라 Palo Alto의 External Dynamic List 기능을 적용하여 DNS 기반으로 120만 개의 유해 사이트를 차단할 수 있도록 구성하였습니다.
